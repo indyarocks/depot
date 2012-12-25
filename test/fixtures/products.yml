@@ -2,12 +2,21 @@
 
 one:
   title: MyString
-  description: 
+  description: MyText
   image_url: MyString
   price: 9.99
 
 two:
   title: MyString
-  description: 
+  description: MyText
   image_url: MyString
   price: 9.99
+
+ruby:
+  title: Agile web development with rails
+  description:
+    Ruby is the fastest growing and most exciting dynamic
+    language out there. If you need to get working programs
+    devlivered fast, you should add Ruby to your toolbox.
+  price: 50.87
+  image_url: rails.png
