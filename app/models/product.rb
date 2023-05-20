@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id          :bigint           not null, primary key
+#  description :text
+#  image_url   :string
+#  price       :decimal(8, 2)
+#  title       :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
 class Product < ApplicationRecord
   validates_presence_of :title, :description, :image_url
   validates :price, numericality: { greater_than_or_equal_to: 0.01 }
