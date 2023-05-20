@@ -3,6 +3,7 @@
 # Table name: line_items
 #
 #  id         :bigint           not null, primary key
+#  price      :decimal(8, 2)
 #  quantity   :integer          default(1)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
@@ -24,6 +25,6 @@ class LineItem < ApplicationRecord
   belongs_to :cart
 
   def total_price
-    (product.price)*quantity
+    price*quantity
   end
 end
