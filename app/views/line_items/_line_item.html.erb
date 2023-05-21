@@ -11,4 +11,7 @@
   <td class="text-right font-bold">
     <%= number_to_currency(line_item.total_price) %>
   </td>
+  <td>
+    <%= button_to "-1", decrement_quantity_line_item_path(line_item), method: :patch, class: 'ml-4 rounded-lg py-1 px-2 text-white bg-green-600' %>
+  </td>
 </tr>

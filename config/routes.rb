@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :line_items
+  resources :line_items do
+    member do
+      patch 'decrement_quantity', as: :decrement_quantity
+    end
+  end
   resources :carts
   root 'store#index', as: 'store_index'
   resources :products
