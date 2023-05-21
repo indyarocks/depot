@@ -21,4 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+#### Typos/Errata
+1. strong params
+2. testcase
+3. Page 151 - `app/views/application/_cart.html.erb` -> `app/views/application/layouts/_cart.html.erb`
