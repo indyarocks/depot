@@ -20,6 +20,12 @@ $> bin/rails test
 ```shell
 $> bin/dev
 ```
+Which executes following:
+```shell
+web: bin/rails server -p 3000
+css: bin/rails tailwindcss:watch
+
+```
 Or alternatively, you can start `tailwinds` and `rails s` independently
 ```shell
 # Terminal 1
@@ -56,9 +62,15 @@ chandan@~/Workspace/2023/depot (main) ± ➜ gem list foreman -i --silent
 
 ```
 
-- Enable cache in Dev environment
+# Chapter 8
+- Enable/Diable cache in Dev environment
 ```shell
-$> bin/rails dev:cache
+chandan@~/Workspace/2023/depot (main) ± ➜ bin/rails dev:cache
+Development mode is now being cached.
+
+chandan@~/Workspace/2023/depot (main) ± ➜ bin/rails dev:cache
+Development mode is no longer being cached.
+
 ```
 ### Concepts
 
